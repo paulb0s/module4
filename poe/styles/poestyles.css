@@ -41,6 +41,10 @@ ul {
     /*some shorthand padding, to make it a bit more separated from the rest of the content*/
 }
 
+a:visited {
+    color: #000;
+}
+
 a.ex1:link,
 a.ex1:visited {
     color: #000;
