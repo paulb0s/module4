@@ -1,0 +1,139 @@
+body {
+    max-width: 60em;
+    margin: 0 auto 0 auto;
+    background: #ffffff url("../images/poe_bg.jpeg");
+}
+
+img {
+    /*width: 1536px;
+    height: 730px;*/
+    /*I thought of determining the size of the image, so that it would not be poorly stretched on smaller devices, but ended up deciding that it would be best to let it stretch accordingly to the screen's size of the device used*/
+    object-fit: fill;
+    /*some adjustments to the background image, making it fit it's container*/
+}
+
+p {
+    background-color: #ecded5;
+    border: 1px solid #000;
+    font-family: "Times New Roman", Times, serif;
+    /*I wanted to include some other fonts, but of course from the same family*/
+}
+
+h2 {
+    background-color: #ecded5;
+    border: 1px solid #000;
+    text-align: center;
+    /*this makes the text centered*/
+    padding: 5px 10px;
+    font-family: "Georgia", serif;
+    /*I wanted to include some other fonts, but of course from the same family*/
+}
+
+ul {
+    background-color: #caa885;
+    border: 1px solid #000;
+    text-align: center;
+    /*this makes the text centered*/
+    list-style-position: inside;
+    /*this makes the bulletpoints follow the text, without it the bulletpoints will remain to their default positions*/
+    padding: 10px 25px;
+
+    /*some shorthand padding, to make it a bit more separated from the rest of the content*/
+}
+
+a.ex1:link,
+a.ex1:visited {
+    color: #000;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a.ex1:hover,
+a.ex1:active {
+    background-color: white;
+}
+
+/*this set of styling makes the link look like a button when hovered over with a cursor*/
+
+a.ex2:link,
+a.ex2:visited {
+    background-color: #caa885;
+    color: #000;
+    border: 1px solid #000;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a.ex2:hover,
+a.ex2:active {
+    background-color: white;
+}
+
+/*this set of styling makes the link look like a button with borders when hovered over with a cursor*/
+
+th {
+    border-collapse: collapse;
+    border: 1px solid #000;
+    padding: 1em;
+    background-color: #ecded5;
+    width: 100%;
+    /*this makes the length of the column to match the full width of the site*/
+    text-align: center;
+    font-family: "Georgia", serif;
+    /*I wanted to include some other fonts, but of course from the same family*/
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid #000;
+    padding: 1em;
+    background-color: #caa885;
+    text-align: center;
+    table-layout: fixed;
+    /*I included this in order to make the table centered, so that both sides are of equal length*/
+    width: 100%;
+}
+
+td {
+    border-collapse: collapse;
+    border: 1px solid #000;
+    padding: 1em;
+    background-color: #caa885;
+    text-align: center;
+    font-style: italic;
+    /*This makes the text shown inside the table to be displayed in italics*/
+    width: 50%;
+    /*I added this so that the table columns are split equally into 2 parts, but only halved in length*/
+}
+
+caption {
+    border-collapse: collapse;
+    border: 1px solid #000;
+    background-color: #caa885;
+    /*The reason I didn't group some of these elements is that I wanted them to have some minor differences, i.e in colors*/
+}
+
+.altcolor {
+    background-color: #ecded5;
+    /* this is so the table alternates between colors*/
+}
+
+.source {
+    padding: 5px 0px;
+    text-align: center;
+    background-color: #e4d4bd;
+    /* i added some padding onto the paragraph with the source link to create some separation*/
+}
+
+.resp {
+    overflow-x: auto;
+    /*this adds a scroll bar to the table, for responsiveness*/
+}
+
+.hcolor {
+    background-color: #caa885;
+    /*i wanted the headers in the other pages to be of a different color*/
+}
